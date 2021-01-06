@@ -1,0 +1,179 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background: radial-gradient(ellipse, rgb(0,50,50), rgb(0,0,0));
+    padding: 20px 0px;
+    box-sizing: border-box;
+}
+
+.game-title, .game-info, .game-instructions, .game-status {
+    text-align: center;
+    color: #f7f7f7;
+    letter-spacing: 0.8px;
+    opacity: 0.85;
+}
+
+.game-title {
+    font-size: 42px;
+    margin: 0px;
+}
+
+.game-info {
+    font-size: 24px;
+    text-shadow: none;
+    color: #ffe5c3;
+    margin: 20px 0px;
+    padding: 0px 20px;
+}
+
+.game-instructions {
+    font-size: 18px;
+    text-shadow: none;
+    font-style: italic;
+    font-weight: lighter;
+    margin: 30px 0px;
+}
+
+.game-status {
+    margin-bottom: 30px;
+    font-size: 26px;
+}
+
+.grid-outer-container {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.grid-area-container {
+    display: grid;
+    grid-template-rows: repeat(5, 100px);
+    grid-template-columns: repeat(5, 100px);
+    grid-gap: 10px;
+}
+
+.grid-box {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: #fff;
+    opacity: 0.1;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+.active-grid-box, .grid-box.active-grid-box:hover, .grid-box.wrong-grid-box:hover {
+    opacity: 0.7;
+}
+
+.wrong-grid-box {
+    background-color: #f00;
+    border-color: #f00;
+    opacity: 0.7;
+}
+
+.grid-box:hover {
+    opacity: 0.3;
+}
+
+.actions {
+    text-align: center;
+}
+
+.action-button {
+    padding: 10px 50px;
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    border: none;
+    color: rgba(255,255,255);
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+.button-disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+.action-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255,255,255);
+}
+
+.tone {
+    display: none;
+}
+
+@media only screen and (max-width:730px) {
+    .game-info {
+        font-size: 21px;
+    }
+}
+
+@media only screen and (max-width: 626px) {
+    .game-info {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .grid-area-container {
+        grid-template-rows: repeat(5, 80px);
+        grid-template-columns: repeat(5, 80px);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .game-title {
+        font-size: 34px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .grid-area-container {
+        grid-template-rows: repeat(5, 70px);
+        grid-template-columns: repeat(5, 70px);
+    }
+    .actions {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 70%;
+        margin: auto;
+    }
+    #start-game {
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .grid-area-container {
+        grid-template-rows: repeat(5, 60px);
+        grid-template-columns: repeat(5, 60px);
+    }
+    .action-button {
+        font-size: 20px;
+    }
+    .game-title {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .grid-area-container {
+        grid-template-rows: repeat(5, 50px);
+        grid-template-columns: repeat(5, 50px);
+    }
+    .game-title {
+        font-size: 26px;
+    }
+    .game-info {
+        font-size: 16px;
+    }
+}

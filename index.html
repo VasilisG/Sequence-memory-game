@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sequence Game</title>
+
+        <link rel="stylesheet" href="css/style.css"/>
+        <script src="js/jquery.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="game-container">
+            <h1 class="game-title">Sequence memory game</h1>
+            <h3 class="game-info">Watch carefully to memorize the sequence and try to repeat it.</h3>
+            <p class="game-instructions">Click / Tap on tiles the play the tone.</p>
+            <div class="grid-outer-container">
+                <div class="grid-area-container">
+                    <div class="grid-box" id="box-1"></div>
+                    <div class="grid-box" id="box-2"></div>
+                    <div class="grid-box" id="box-3"></div>
+                    <div class="grid-box" id="box-4"></div>
+                    <div class="grid-box" id="box-5"></div>
+                    <div class="grid-box" id="box-6"></div>
+                    <div class="grid-box" id="box-7"></div>
+                    <div class="grid-box" id="box-8"></div>
+                    <div class="grid-box" id="box-9"></div>
+                    <div class="grid-box" id="box-10"></div>
+                    <div class="grid-box" id="box-11"></div>
+                    <div class="grid-box" id="box-12"></div>
+                    <div class="grid-box" id="box-13"></div>
+                    <div class="grid-box" id="box-14"></div>
+                    <div class="grid-box" id="box-15"></div>
+                    <div class="grid-box" id="box-16"></div>
+                    <div class="grid-box" id="box-17"></div>
+                    <div class="grid-box" id="box-18"></div>
+                    <div class="grid-box" id="box-19"></div>
+                    <div class="grid-box" id="box-20"></div>
+                    <div class="grid-box" id="box-21"></div>
+                    <div class="grid-box" id="box-22"></div>
+                    <div class="grid-box" id="box-23"></div>
+                    <div class="grid-box" id="box-24"></div>
+                    <div class="grid-box" id="box-25"></div>
+                </div>
+            </div>
+            <div class="game-status-container">
+                <p class="game-status">Score: 0</p>
+            </div>
+            <div class="actions">
+                <button class="action-button" id="start-game">Start game</button>
+                <button class="action-button button-disabled" id="play-again">Play again</button>
+            </div>
+        </div>
+        <audio class="tone">
+            <source src="assets/tone.wav" type="audio/mpeg">
+        </audio>
+        <audio class="tone">
+            <source src="assets/wrong_tile.wav" type="audio/mpeg">
+        </audio>
+    </body>
+</html>
