@@ -4,4 +4,4 @@ A memory game in which the player must memorize and repeat each sequence of tone
 
 ### Demo
 
-You can view a demo here.
+You can view a demo [here](https://vasilisg.github.io/Sequence-memory-game/).
